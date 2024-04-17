@@ -93,15 +93,5 @@ namespace Milionerzy.Mechanics
             player.EndGameResult();
             Console.WriteLine("--------------");
         }
-
-
-
-
-
-
-
-
-
-
     }
 }
