@@ -51,7 +51,7 @@ namespace Milionerzy.Mechanics
                         }
 
                         nextQuestion = new Question();
-                        nextQuestion.Content = line.Substring("Pytanie:".Length).Trim();
+                        nextQuestion.Content = line.Substring("Pytanie:".Length);
                     }
                     else if (line.StartsWith("Poprawna odpowiedź:"))
                     {
@@ -61,7 +61,7 @@ namespace Milionerzy.Mechanics
                     else
                     {
                         char answerLetter = line[0];
-                        string answerText = line.Substring(3).Trim();
+                        string answerText = line
                         switch (answerLetter)
                         {
                             case 'a':
