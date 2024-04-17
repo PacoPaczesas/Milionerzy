@@ -12,7 +12,7 @@ namespace Milionerzy.Models
     {
         public Player()
         {
-            Console.WriteLine("Wprowadź imie gracza:");
+            Console.Write("Wprowadź imie gracza: ");
             Name = Console.ReadLine();
             FiftyFifty = true;
             Telephone = true;

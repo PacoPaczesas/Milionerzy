@@ -12,7 +12,8 @@ do
             Game.StartNewGame();
             break;
         case 2:
-            Console.WriteLine("Wyniki");
+            //TODO
+            Console.WriteLine("TODO");
             break;
         case 3:
             Console.WriteLine("wyjscie");
@@ -20,5 +21,4 @@ do
     }
 }   while (gameMode != 3); 
 
-Console.ReadKey();
     

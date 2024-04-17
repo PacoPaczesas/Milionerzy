@@ -31,7 +31,7 @@ namespace Milionerzy.Mechanics
             {
                 Console.WriteLine("MENU:");
                 Console.WriteLine("1. NOWA GRA");
-                Console.WriteLine("2. NAJLEPSZE WYNIKI");
+                Console.WriteLine("2. WYNIKI");
                 Console.WriteLine("3. WYJDŹ");
                 Console.Write("Wybierz z menu i potwierdź ENTER: ");
 
@@ -70,10 +70,12 @@ namespace Milionerzy.Mechanics
             {
                 if (player.Score == 0)
                 {
+                    Console.WriteLine("--------------");
                     Console.WriteLine("Zaczynamy grę. Pytanie za " + player.NextQyestionPrize() + " zł");
                 }
                 else
                 {
+                    Console.WriteLine("--------------");
                     Console.WriteLine("Pora na kolejne pytanie. Pytanie za " + player.NextQyestionPrize() + " zł");
                 }
                 correctAnswer = gameMechanics.NextRound(player);
@@ -89,30 +91,7 @@ namespace Milionerzy.Mechanics
             } while (correctAnswer && !player.Winner && !player.Resign);
 
             player.EndGameResult();
-
-            /*            do
-                        {
-                            if (player.Score == 0)
-                            {
-                                Console.WriteLine("Zaczynamy grę.");
-                            }
-                            else
-                            {
-                                Console.WriteLine("Pora na kolejne pytanie. Pytanie o " + player.NextQyestionPrize() + " zł");
-                            }
-                            answer = gameMechanics.NextRound(player);
-
-                            if (!player.Resign)
-                            {
-                                player.GoodAnswer();
-                                Console.WriteLine("Dobra odpowiedź.");
-                                player.CheckIsWinner();
-                            }
-                        } while (answer && !player.Winner && !player.Resign);
-
-            //koniec gry
-            player.EndGameResult();
-            */
+            Console.WriteLine("--------------");
         }
 
 

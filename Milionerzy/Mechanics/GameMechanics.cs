@@ -61,7 +61,7 @@ namespace Milionerzy.Mechanics
                     else
                     {
                         char answerLetter = line[0];
-                        string answerText = line
+                        string answerText = line;
                         switch (answerLetter)
                         {
                             case 'a':
@@ -99,7 +99,7 @@ namespace Milionerzy.Mechanics
             int rnd = random.Next(questionList.Count);
             Question randomQuestion = questionList[rnd];
             questionList.RemoveAt(rnd);
-            Console.WriteLine("usunięto pytanie. pozostąło pytań " + questionList.Count);
+            Console.WriteLine(">>>> usunięto pytanie. pozostąło pytań " + questionList.Count);
             return randomQuestion;
         }
 
@@ -115,8 +115,9 @@ namespace Milionerzy.Mechanics
                 question.AskQuestion(answerList);
                 player.HintsAvailable();
                 Console.WriteLine("X: Rezygnuj i zgarnij aktualną pulę pieniędzy");
+                Console.Write("Twoja odpowiedź: ");
                 answer = char.ToUpper(Console.ReadKey().KeyChar);
-
+                Console.WriteLine(" ");
                 if (answer == 'E' && player.Telephone)
                 {
                     player.CallFriend(question);

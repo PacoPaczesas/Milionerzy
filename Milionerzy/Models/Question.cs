@@ -34,6 +34,7 @@ namespace Milionerzy.Models
             // w przypadku skorzystania z 50/50 zwracam listę z dwoma odpowiedziami - jedną prawidłową i jedną błędną.
             else
             {
+                Console.WriteLine("Skorzystano z koła ratunkowego 50/50. Dwie błędne odpowiedzi zostały usunięte");
                 List<string> answerListWithTwoAnswers = new List<string>();
                 if (CorrectAnswer == 'A')
                 {
