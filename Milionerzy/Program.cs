@@ -1,11 +1,11 @@
 ﻿using Milionerzy.Mechanics;
 
-Menu.WelcomeMenu();
-
+Game.WelcomeMenu();
 int gameMode;
+
 do
 {
-    gameMode = Menu.SelectFromMenu();
+    gameMode = Game.SelectFromMenu();
     switch (gameMode)
     {
         case 1:
@@ -19,4 +19,6 @@ do
             break;
     }
 }   while (gameMode != 3); 
+
+Console.ReadKey();
     

@@ -3,67 +3,135 @@ a) Berlin
 b) Paryż
 c) Londyn
 d) Madryt
-Poprawna odpowiedź: b) Paryż
+Poprawna odpowiedź: B
 
 Pytanie: Który pierwiastek chemiczny symbolizowany jest jako 'Fe'?
 a) Żelazo
 b) Węgiel
 c) Miedź
 d) Srebro
-Poprawna odpowiedź: a) Żelazo
+Poprawna odpowiedź: A
 
 Pytanie: Które zwierzę jest największe na świecie?
 a) Słoń
 b) Wieloryb błękitny
 c) Słoń morski
 d) Niedźwiedź polarny
-Poprawna odpowiedź: b) Wieloryb błękitny
+Poprawna odpowiedź: B
 
 Pytanie: Która planeta jest najbliżej Słońca?
 a) Wenus
 b) Mars
 c) Ziemia
 d) Merkury
-Poprawna odpowiedź: d) Merkury
-
+Poprawna odpowiedź: D
 Pytanie: Która z tych państwowych drużyn piłkarskich wygrała najwięcej mistrzostw świata?
 a) Brazylia
 b) Niemcy
 c) Włochy
 d) Argentyna
-Poprawna odpowiedź: a) Brazylia
+Poprawna odpowiedź: A
 
 Pytanie: Który kraj jest największym producentem ropy naftowej na świecie?
 a) Arabia Saudyjska
 b) Stany Zjednoczone
 c) Rosja
 d) Kanada
-Poprawna odpowiedź: a) Arabia Saudyjska
+Poprawna odpowiedź: A
 
 Pytanie: Które miasto jest stolicą Japonii?
 a) Osaka
 b) Kioto
 c) Tokio
 d) Sapporo
-Poprawna odpowiedź: c) Tokio
-
+Poprawna odpowiedź: C
 Pytanie: Która rzeka jest najdłuższa na świecie?
 a) Nil
 b) Amazonka
 c) Missisipi
 d) Jangcy
-Poprawna odpowiedź: a) Nil
+Poprawna odpowiedź: A
 
 Pytanie: Która z tych części ciała nie jest kością?
 a) Kość ramienna
 b) Kość piszczelowa
 c) Kość łokciowa
 d) Mięsień sercowy
-Poprawna odpowiedź: d) Mięsień sercowy
+Poprawna odpowiedź: F
 
 Pytanie: Który z tych oceanów jest największy pod względem powierzchni?
 a) Atlantycki
 b) Indyjski
 c) Spokojny
 d) Arktyczny
-Poprawna odpowiedź: c) Spokojny
+Poprawna odpowiedź: C
+
+Pytanie: Który z tych kontynentów jest największy pod względem powierzchni?
+a) Afryka
+b) Europa
+c) Ameryka Południowa
+d) Azja
+Poprawna odpowiedź: D
+
+Pytanie: Który pierwiastek chemiczny jest podstawowym składnikiem powietrza?
+a) Azot
+b) Wodór
+c) Tlen
+d) Argon
+Poprawna odpowiedź: A
+
+Pytanie: Które z tych zwierząt nie jest ssakiem?
+a) Kangur
+b) Pingwin
+c) Wieloryb
+d) Słoń
+Poprawna odpowiedź: B
+
+Pytanie: Które z tych miast jest stolicą Francji?
+a) Berlin
+b) Madryt
+c) Rzym
+d) Paryż
+Poprawna odpowiedź: D
+
+Pytanie: Która z tych planet jest najbliżej Słońca?
+a) Mars
+b) Wenus
+c) Ziemia
+d) Jowisz
+Poprawna odpowiedź: B
+
+Pytanie: Który z tych sportów nie jest grą zespołową?
+a) Koszykówka
+b) Bieganie
+c) Piłka nożna
+d) Siatkówka
+Poprawna odpowiedź: B
+
+Pytanie: Który z tych państw nie leży w Europie?
+a) Niemcy
+b) Brazylia
+c) Hiszpania
+d) Szwajcaria
+Poprawna odpowiedź: B
+
+Pytanie: Które z tych zwierząt jest drapieżnikiem?
+a) Koń
+b) Rekin
+c) Krowa
+d) Wiewiórka
+Poprawna odpowiedź: B
+
+Pytanie: Które z tych dzieł literackich zostało napisane przez Williama Szekspira?
+a) Władca Pierścieni
+b) Hamlet
+c) Opowieść wigilijna
+d) Zbrodnia i kara
+Poprawna odpowiedź: B
+
+Pytanie: Który z tych gatunków ptaków nie potrafi latać?
+a) Sęp
+b) Orzeł
+c) Pingwin
+d) Kanarek
+Poprawna odpowiedź: C

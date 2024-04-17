@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,7 +17,9 @@ namespace Milionerzy.Models
             FiftyFifty = true;
             Telephone = true;
             Audience = true;
+            Resign = false;
             Score = 0;
+            Winner = false;
         }
 
 
@@ -26,75 +29,120 @@ namespace Milionerzy.Models
         public bool FiftyFifty { get; set; }
         public bool Telephone { get; set; }
         public bool Audience { get; set; }
+        public bool Resign { get; set; }
+        public bool Winner { get; set; }
+
+        private readonly int[] scoreToMoney = { 0, 500, 1000, 2000, 5000, 10000, 20000, 40000, 75000, 125000, 250000, 500000, 1000000, 999999999 };
 
         public void GoodAnswer()
         {
             Score++;
         }
 
-        public bool CanUseTelephone()
+        // Wyświetla dostępne koła ratunkowa
+        public void HintsAvailable()
         {
             if (Telephone)
             {
                 Console.WriteLine("E: telefon do przyjaciela");
-                return true;
             }
-            return false;
+            if (Audience)
+            {
+                Console.WriteLine("F: Pytanie do publiczności");
+            }
+            if (FiftyFifty)
+            {
+                Console.WriteLine("G: 50 na 50");
+            }
         }
 
-        public char CallFriend(Question question)
+        // koła ratunkowe
+        public void CallFriend(Question question)
         {
             Telephone = false;
             Console.WriteLine("Twój przyjaciel odpowiada, że prawidłowa odpowiedź to: " + question.CorrectAnswer);
-            Console.WriteLine("Przypomnę pytanie");
-            Console.WriteLine("Pytanie: " + question.Content);
-            Console.WriteLine("Odpowiedzi:");
-            Console.WriteLine(question.AnswerA);
-            Console.WriteLine(question.AnswerB);
-            Console.WriteLine(question.AnswerC);
-            Console.WriteLine(question.AnswerD);
-            char answer = char.ToUpper(Console.ReadKey().KeyChar);
-            return answer;
+
+        }
+
+        public void AskAudience(Question question)
+        {
+            Audience = false;
+            Console.WriteLine("Publiczność głosuje: A: 80%, B: 10%: C: 7% D: 3%");
         }
 
 
 
-
-
-
+        // wypłata nagrody
+        /*
+        500
+        1000*gwarantowane
+        2000
+        5000
+        10000
+        20000
+        40000*gwarantowane
+        75000
+        125000
+        250000
+        500000
+        1000000*gwarantowane
+        */
         public int Prize()
         {
-            /*
-            500
-            1000*
-            2000
-            5000
-            10000
-            20000
-            40000*
-            75000
-            125000
-            250000
-            500000
-            1000000*
-            */
-            if (Score < 2)
+            if (Resign)
             {
-                return 0;
+                return scoreToMoney[Score];
             }
-            else if (Score < 7)
+            else if (Winner)
             {
-                return 1000;
-            }
-            else if (Score < 12)
-            {
-                return 40000;
+                return scoreToMoney[12];
             }
             else
             {
-                return 1000000;
+                if (Score < 2)
+                {
+                    return scoreToMoney[0];
+                }
+                else if (Score < 7)
+                {
+                    return scoreToMoney[2];
+                }
+                else if (Score < 12)
+                {
+                    return scoreToMoney[7];
+                }
+                else
+                {
+                    return scoreToMoney[12];
+                }
             }
         }
+        public int NextQyestionPrize()
+        {
+            return scoreToMoney[Score + 1];
+        }
+
+        public void CheckIsWinner()
+        {
+            if (Score == 12) { Winner = true; }
+        }
+
+        public void EndGameResult()
+        {
+            if (Winner)
+            {
+                Console.WriteLine("Brawo, wygrałeś 1 mln zł! KONIEC GRY");
+            }
+            else if (Resign)
+            {
+                Console.WriteLine("Zrezygnowałeś z dalszej try. Twoja wygrana to " + Prize() + " zł. KONIEC GRY");
+            }
+            else
+            {
+                Console.WriteLine("Błędna odpowiedź. Wygrywasz: " + Prize() + "zł. KONIEC GRY");
+            }
+        }
+
 
     }
 }
